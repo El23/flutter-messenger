@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "311685886044",
+    "project_id": "messenger-fe74a",
+    "storage_bucket": "messenger-fe74a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:311685886044:android:ad6655c55ccd1a56c37699",
+        "android_client_info": {
+          "package_name": "com.example.flutter_app_messenger"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "311685886044-aibq5og6a2cdcrkmjak53e3q0s8oquh8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCY-58MQ9FXce8ucmCmS5nrtZ0zStP11Y0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "311685886044-aibq5og6a2cdcrkmjak53e3q0s8oquh8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
