@@ -20,7 +20,7 @@ class MyApp extends StatelessWidget {
         theme: light,
         darkTheme: dark,
         title: 'Flutter Demo',
-        home: SignUp(),
+        home: SignIn(),
       ),
     );
   }

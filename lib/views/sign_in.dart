@@ -2,6 +2,10 @@ import 'package:adaptive_theme/adaptive_theme.dart';
 import 'package:flutter/material.dart';
 
 class SignIn extends StatefulWidget {
+
+  final Function toggle;
+  SignIn(this.toggle);
+
   @override
   _SignInState createState() => _SignInState();
 }
@@ -88,7 +92,15 @@ class _SignInState extends State<SignIn> {
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Text("Have no account yet? Sign up ",style: TextStyle(color: Color(0xff333366)),)
+                  GestureDetector(
+                    onTap: (){
+                      widget.toggle();
+
+                    },
+                    child: Container(
+                        padding: const EdgeInsets.symmetric(vertical: 8),
+                        child: Text("Have no account yet? Sign up ",style: TextStyle(color: Color(0xff333366)),)),
+                  )
                 ],
               )
             ],
