@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_app_messenger/helper/authenticate.dart';
 import 'package:flutter_app_messenger/services/auth.dart';
+import 'package:flutter_app_messenger/views/search.dart';
 import 'package:flutter_app_messenger/views/sign_in.dart';
 
 class ChatRoom extends StatefulWidget {
@@ -23,13 +25,20 @@ class _ChatRoomState extends State<ChatRoom> {
           GestureDetector(
             onTap: () {
               authMethods.signOut();
-              Navigator.pushReplacement(context, MaterialPageRoute(builder: (context)=> SignIn()));
+              Navigator.pushReplacement(context, MaterialPageRoute(builder: (context)=> Authenticate()));
             },
             child: Container(
                 padding: const EdgeInsets.symmetric(horizontal: 24),
                 child: Icon(Icons.exit_to_app)),
           )
         ],
+      ),
+      floatingActionButton: FloatingActionButton(
+        child: Icon(Icons.search),
+        onPressed: (){
+
+          Navigator.push(context, MaterialPageRoute(builder: (context)=> Search()));
+        },
       ),
     );
   }

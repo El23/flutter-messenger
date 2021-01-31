@@ -1,5 +1,6 @@
 import 'package:adaptive_theme/adaptive_theme.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_app_messenger/helper/authenticate.dart';
 import 'package:flutter_app_messenger/theme.dart';
 import 'package:flutter_app_messenger/views/sign_in.dart';
 import 'package:flutter_app_messenger/views/sign_up.dart';
@@ -20,7 +21,7 @@ class MyApp extends StatelessWidget {
         theme: light,
         darkTheme: dark,
         title: 'Flutter Demo',
-        home: SignIn(),
+        home: Authenticate(),
       ),
     );
   }
